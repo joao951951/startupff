@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="cart" color="danger"></ion-icon>
+      Fast and Flash  
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Para todos os gostos F&F</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <ion-item>
+        <img src="assets/images/13.jpg">
+      </ion-item>
+      Faça suas compras sem sair de casa, no conforto que a F&F pode te oferecer.
+    </ion-card-content>
+  </ion-card>
+  <ion-list>
+  <ion-item>
+    <ion-label position="floating" >Login</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Senha</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  
+  </ion-list>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-button expand="full" color="danger" routerLink="/escolha"  shape="round">Login</ion-button>
+      </ion-col>
+      <ion-col>
+          <ion-button expand="full" color="danger" routerLink="/registro" shape="round">Registrar</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="full" color="danger" shape="round" >Ajuda</ion-button>
+      </ion-col>
+    </ion-row >
+    </ion-grid>
+    <ion-button expand="full" color="danger" shape="round" routerLink="/controle">Controle Mercado</ion-button>
+
+</ion-content>
