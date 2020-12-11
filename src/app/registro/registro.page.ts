@@ -35,7 +35,7 @@ export class registroPage implements OnInit {
   }
 
   gravar(){
-    if(this.contato.nome !="" || this.contato.senha != "" || this.contato.cpf !="" || this.contato.email !=""){
+    if(this.contato.nome !="" && this.contato.senha != "" && this.contato.cpf !="" && this.contato.email !=""){
       this.http.post<any>(this.api+"inclusao.php",
          this.contato)
       .subscribe( dados => {
